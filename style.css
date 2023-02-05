@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+.container{
+    /* font-family: 'Righteous'; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 100%;
+    /* width: 80%; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grid{
+    width: 750px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h3{
+    color: cyan;
+}
