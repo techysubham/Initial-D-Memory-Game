@@ -1,30 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-/* *{
+@import url(https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker:regular);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P:regular);
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
-body{
+}
+
+body {
+    height: 100vh;
+    width: 100%;
     background-color: black;
     color: white;
-    font-family: 'Roboto Mono', monospace;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-.container{
-    /* font-family: 'Righteous'; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+/* Works fine until 802x570 */
+.container {
+    padding-bottom: 6rem;
+    height: 100vh;
+    width: 100vw;
+    /* background: url(/images/bg/86sexy.jpg) no-repeat center center/cover; */
 }
-.game{
+
+header {
+    padding-top: 20px;
+    text-align: center;
+    /* font-family: 'Orbitron'; */
+    font-family: 'Permanent Marker', curvisve;
+    /* font-family: 'Press Start 2P', cursive; */
+    color: red;
+}
+
+.game {
     height: 100%;
-    /* width: 80%; */
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#grid{
+
+#grid {
     width: 750px;
     height: 450px;
     display: flex;
@@ -32,6 +51,15 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
-h3{
+
+h3 {
     color: cyan;
+}
+#btn button{
+    border: 1px solid rgba(255, 0, 0, 0.445);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.452);
+    color: red;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px;
 }

@@ -5,20 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
+    <link rel="icon" href="images/icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" charset="utf-8"></script>
+    <title>Memory Game</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Initial D Memory Game</h1>
+        <header>
+            <h1>Initial D Memory Game</h1>
+        </header>
+
+        <section class="game">
+            <div id="grid"></div>
+            <h3>Score: <span id="result"></span></h3>
+            <div id="btn">
+                <button onclick="changeBackground()">Background</button>
+                <button onclick="window.location.reload()">Play Again</button>
+            </div>
+        </section>
     </div>
-    <section class="game">
-        <div id="grid"></div>
-        <h3>Score: <span id="result"></span></h3>
-    </section>
-    <!-- <script src="app.js"></script> -->
+    <!-- 
+todo: 1st Change background of body with something really good
+todo: 2nd Add Music track in the background with controls to mute it or stop it
+todo: Add pop-ups in the game to make game more legit
+todo: 3rd Make the UI little bit good and more responsive 
+todo: 4th Implement everything with JQuery
+     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script defer src="app.js" charset="utf-8"></script> -->
+    <script defer src="game.js" charset="utf-8"></script>
 </body>
 
 </html>
