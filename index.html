@@ -7,30 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Memory Game</title>
+    <title>Initial D Memory Game</title>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>Initial D Memory Game</h1>
+            <h1 id="t2">Initial D Memory Game</h1>
         </header>
 
         <section class="game">
             <div id="grid"></div>
-            <h3>Score: <span id="result"></span></h3>
-            <div id="btn">
+            <!-- <h3>Score: <span id="result"></span></h3> -->
+            <!-- <h3>&#8205;<span id="result"></span></h3> -->
+            <section id="cringe">
                 <button onclick="changeBackground()">Background</button>
-                <button onclick="window.location.reload()">Play Again</button>
-            </div>
+                <!-- <button onclick="window.location.reload()">Play Again</button> -->
+                <button onclick="playAgain()">Play Again</button>
+                <h4 id="target"><span id="result"></span></h4>
+            </section>
         </section>
     </div>
     <!-- 
-todo: 1st Change background of body with something really good
-todo: 2nd Add Music track in the background with controls to mute it or stop it
-todo: Add pop-ups in the game to make game more legit
-todo: 3rd Make the UI little bit good and more responsive 
-todo: 4th Implement everything with JQuery
+todo: Make a Loading page and configure it to laod while files are in the right place
      -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- <script defer src="app.js" charset="utf-8"></script> -->

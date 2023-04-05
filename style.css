@@ -12,27 +12,35 @@ body {
     height: 100vh;
     width: 100%;
     background-color: black;
-    color: white;
     overflow-x: hidden;
     overflow-y: hidden;
 }
-
 
 /* Works fine until 802x570 */
 .container {
     padding-bottom: 6rem;
     height: 100vh;
     width: 100vw;
-    /* background: url(/images/bg/86sexy.jpg) no-repeat center center/cover; */
+    background: url(/images/bg/default1.jpg) no-repeat center center/cover;
 }
 
 header {
     padding-top: 20px;
-    text-align: center;
+    /* text-align: center; */
     /* font-family: 'Orbitron'; */
     font-family: 'Permanent Marker', curvisve;
     /* font-family: 'Press Start 2P', cursive; */
-    color: red;
+    color: rgba(255, 0, 0, 0.664);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    background-color: rgba(0, 0, 0, 0.247);
+    backdrop-filter: blur(2px);
+    border-radius: 100px;
+    padding: 0 18px;
 }
 
 .game {
@@ -52,14 +60,44 @@ header {
     flex-wrap: wrap;
 }
 
-h3 {
-    color: cyan;
+#cringe {
+    height: 10%;
+    text-align: center;
+    margin-top: 20px;
+    bottom: 0;
+
 }
-#btn button{
+
+#cringe h4 {
+    margin: 5px;
     border: 1px solid rgba(255, 0, 0, 0.445);
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.452);
     color: red;
     font-family: 'Press Start 2P', cursive;
-    padding: 10px;
+    padding: 8px;
+    backdrop-filter: blur(3px);
+}
+
+#cringe button {
+    margin: 5px;
+    border: 1px solid rgba(255, 0, 0, 0.445);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.452);
+    color: red;
+    font-family: 'Press Start 2P', cursive;
+    padding: 8px;
+    backdrop-filter: blur(3px);
+}
+
+#cringe button:hover {
+    outline: red groove 2px;
+}
+
+#cringe button:focus {
+    outline: red groove 2px;
+}
+
+.hide {
+    visibility: hidden;
 }
